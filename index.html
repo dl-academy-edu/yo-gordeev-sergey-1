@@ -4,20 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/common.css">
     <title>DLK</title>
 </head>
 <body>
-    <header class="header">
-        <nav>
+    <header class="header conteiner">
+        <a class="header__logo" href="/">
+            <img class="header__logo-img" src="../img/Union.png" alt="Logotype of DLK" width="100px"
+            height="52px"></a>
+        <nav class="header__link">
             <ul class="header__list">
-                <li class="header__list-item"><a class="header__list-link" href="/"><img src="./img/Union.png" alt="Logotype of DLK"></a></li>
-                <li class="header__list-item"><a class="header__list-link" href="#">BLOG</a></li>
-                <li class="header__list-item"><a class="header__list-link" href="#">CATALOG</a></li>
+                <li class="header__list-item"><a class="header__list-link" href="../page/blog.html">BLOG</a></li>
+                <li class="header__list-item"><a class="header__list-link" href="../page/catalog.html">CATALOG</a></li>
                 <li class="header__list-item"><a class="header__list-link" href="#">ABOUT US</a></li>
             </ul>
         </nav>
-           <ul class="search">
-                <li class="search__list">
+           <ul class="header__search">
+                <li class="header__search-list">
                     <img class="search__img" src="#" alt="search"></li>
                 <li class="search__list">
                     <a class="search__link" href="#">CONTACT US</a> 
@@ -25,23 +28,21 @@
             </ul>
         </header>
     <main>
-        <section class="banner">
+        <section class="banner conteiner">
+            <h1 class="banner__title"> THE OOH NOO COLLECTION</h1>
              <ul class="banner__list">
                 <li class="banner__list-item"><p class="banner__list-text">01</p></li>
-                <li class="banner__list-item"><button type="button" class="banner__btn">#</button></li>
-                <li class="banner__list-item"><button type="button" class="banner__btn">#</button></li>
-                <li class="banner__list-item"><button type="button" class="banner__btn">#</button></li>
-                <li class="banner__list-item"><button type="button" class="banner__btn">#</button></li>
-            </ul>
-            <ul class="banner__items">
-                <li class="banner__items"><h1 class="banner__title"> THE OOH NOO COLLECTION</h1></li>
-                <li class="banner__items"><p class="banner__subtitle">Desigen in Slovenia</p></li>
-                <li class="banner__items"><form action=""><button type="button" class="banner_btn" name="button">EXPLORE NOW</button></form></li>
-                <li class="banner__items"><h2 class="banner__items-text">FREE(CONTINENTAL) USA SHIPPING ON ALL ORDERS OF $100 USD OR MORE!</h2></li>
-                <img class="banner__img" src="./img/banner-backgroun.png" alt="backgroun">
-            </ul>
+                <li class="banner__list-item"><button type="button" class="banner__slide">#</button></li>
+                <li class="banner__list-item"><button type="button" class="banner__slide">#</button></li>
+                <li class="banner__list-item"><button type="button" class="banner__slide">#</button></li>
+                <li class="banner__list-item"><button type="button" class="banner__slide">#</button></li>
+                <li class="banner__list_item"><img class="banner__img" src="../img/banner-backgroun.png" alt="backgroun"></li>
+                <li class="banner__list_item"><p class="banner__subtitle">Desigen in Slovenia</p></li>
+                <li class="banner__list_item"><form action=""><button type="button" class="banner_btn" name="button">EXPLORE NOW</button></form>
+                <li class="banner__list_item" ><h2 class="banner__items-text">FREE(CONTINENTAL) USA SHIPPING ON ALL ORDERS OF $100 USD OR MORE!</h2></li>
+                </ul>
         </section>
-        <section class="category">
+        <section class="category conteiner ">
             <h2 class="category__title">CATEGORY PRODUCTS</h2>
             <ul class="category__list">
                 <li class="category__list-item"> <!--h3 удалить при необходимости-->
@@ -64,14 +65,14 @@
             <form action="" method="post">
                 <ul class="cetegory__btn"> 
                     <li class="category__btn-list">
-                        <button class="category__btn-item">#</button></li>
+                        <button class="category__btn-item ">back</button></li>
                     <li class="category__btn-list">
-                        <button class="category__btn-item">#</button></li>
+                        <button class="category__btn-item">next</button></li>
                     <li><h3 class="category__btn-list-item">Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.</h3></li>
                 </ul>
             </form>
         </section>
-        <section class="delivery"> 
+        <section class="delivery conteiner"> 
             <img class="delivery__img" src="./img/photo.png" alt="photo">
             <h2 class="delivery__title">DELIVERY</h2>
             <ul class="delyvery__list">
@@ -83,7 +84,7 @@
                 <li class="delivery__list-item"><button class="delyvery__list-btn" type="button" name="button">LEARN MORE</button></li>
             </ul>
         </section>
-        <section class="partners">
+        <section class="partners conteiner">
             <ul class="partners__list">
                 <li class="partners__list-item"><a class="partners__list-link" href="#">mail</a><img class="partners__img" src="./img/mail.png" alt="link to mail.ru"></li>
                 <li class="partners__list-item"><a class="partners__list-link" href="#">aplle</a><img class="partners__img" src="./img/apple.png" alt="link to apple.com"></li>
@@ -91,7 +92,7 @@
                 <li class="partners__list-item"><a class="partners__list-link" href="#">owox</a><img class="partners__img" src="./img/owox.png" alt="link to owox.com"></li>
             </ul>
         </section>
-        <section class="design">
+        <section class="design conteiner">
             <ul class="design__list">
                 <li class="design__list-item"><h2 class="design__title">DESING LIFE KIDS</h2></li>
                 <li class="design__list-item"><p class="design__list-subtitle">About Us</p></li>
@@ -109,13 +110,13 @@
             </ul>
         </section>
     </main>
-    <footer>
+    <footer class="footer conteiner">
         <section class="navigation">
-        <ul class="navigation__list">
+            <ul class="navigation__list">
                 <li class="navigation__list-item"><a class="navigation__title-link" href="#">Navigation</a></li>
                 <li class="navigation__list-item"><a class="navigation__list-link" href="#">About Us</a></li>
                 <li class="navigation__list-item"><a class="navigation__list-link" href="#">Blog</a></li>
-            <li class="navigation__list-item"><a class="navigation__list-link" href="#">Design Services</a></li>
+                <li class="navigation__list-item"><a class="navigation__list-link" href="#">Design Services</a></li>
                 <li class="navigation__list-item"><a class="navigation__list-link" href="#">Featured On</a></li>
                 <li class="navigation__list-item"><a class="navigation__list-link" href="#">2018 Holiday Catalog</a></li>
                 <li class="navigation__list-item"><a class="navigation__list-link" href="#">Shop By Designer</a></li>
@@ -124,7 +125,7 @@
                 <li class="information__list-item"><a class="information__title-link"href="#">Customer Information</a>            
                 <li class="information__list-item"><a class="information__list-link" href="#">Contact Us</a></li>
                 <li class="information__list-item"><a class="information__list-link" href="#">Sale Exclusions</a></li>
-            <li class="information__list-item"><a class="information__list-link" href="#">Shipping & Returns</a></li>
+                <li class="information__list-item"><a class="information__list-link" href="#">Shipping & Returns</a></li>
                 <li class="information__list-item"><a class="information__list-link" href="#">Terms & Conditions</a></li>
                 <li class="information__list-item"><a class="information__list-link" href="#">Privacy Policy</a></li>
                 <li class="Information__list-item"><a class="information__list-link" href="#">Search</a></li>
@@ -161,6 +162,27 @@
                 <li class="developers__list"><div class="developers__item">Web Design — Direct Line Development</div></li>
             </ul>
         </section>
-    </footer>    
+    </footer>
+    <section class="support">  <!-- Всплывающее окно-->
+        <form class="suppotr__form" action="" method="get">
+            <dvi class="support__list">
+                <div class="support__input">
+                    <label class="support__label" for="Name">Name</lable>
+                    <input class="support__iput" type="text" value="Ivan Ivanov"><div>
+                <div class="support__iput">
+                    <label class="support__label" for="Phone">Phone</label
+                    ><input class="support__iput" type="tel" id="Phone"></div>
+                    <div class="support__iput">
+                        <label class="support__label" for="Email">Email</label
+                        ><input class="support__iput" type="email" id="Email"></div>
+                <div>
+                    <label class="suppotr_massege" for="">Message</label>
+                    <textarea class="support_area" id="Message" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+            <div class="support__list-item"><input class="support__text" type="checkbox" name="" id="">By clicking on the button, you consent to the processing of your personal data</div>
+            <button class="support__btm">Submit</button>
+        </form>
+    </section>
 </body>
 </html>
