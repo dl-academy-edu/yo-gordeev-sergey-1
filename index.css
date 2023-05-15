@@ -7,7 +7,6 @@
 .banner {
     display: flex;
     margin-top: 122px;
-    height: 411px;
     background-color: #EEE4DB;
     flex-wrap: wrap;   
 }
