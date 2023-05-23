@@ -71,75 +71,182 @@ a {
 
 .footer {
     display: flex;
+    justify-content: flex-start;
     flex-wrap: wrap;
+    max-width: 1400px;
+    margin: 0 auto;
+    background: #434343;
+}
+.navigation__title,
+.information__title,
+.connect__title,
+.description__title{
+    padding: 4px;
+    opacity: 0;
+    width: 1%;
+
+}
+.information{
+    width: 30%;
+    margin-left: -20px;
+}
+.navigation{
+    width: 30%;
+    margin-left: 70px;
+    
+}
+.connect {
+    /* display: flex; */
+    width: 27%;
+    margin-left: 19px;
+}
+
+
+.navigation__title-item,
+.information__title-item,
+.connect__title-item {
+    padding-bottom: 23px;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
-    background-color: #434343;
-    color: #FFFFFF;
-}
-
-.navigation,
-.information,
-.connect {
-    display: flex;
-    width: 20%;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
-    margin: 100px;
-
+    color: #AAAAAA;
+    border-bottom: 1px solid #666666;
+    max-width: 380px;
 }
 
 .navigation__list-item,
-.information__list-item {
-    margin-top: 15px;
-}
-
-.navigation__title-item,
-.information__title-item,
-.connect__title-link {
-    flex-direction: column;
-    /* align-items: flex-start; */
-    margin-bottom: 52px;
-    color: #AAAAAA;
+.information__list-item,
+.connect__list-item {
+    padding-bottom: 15px;
 }
 
 .navigation__list-link,
-.information__list-link {
-     color: #FFFFFF;
+.information__list-link,
+.connect__list-link {
+    padding: 5px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.connect__email{
+    border: none;
+    width: 299px;
+    height: 40px;
+    margin-top: 15px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #EBEBEB;
+    background: #666666;
+}
+
+.connect__btn {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    padding: 9px 22px;
+    border: none;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #000000;
+}
+
+.connect__input{
+    display: flex;
+}
+
+.connect__list{
+    display: flex;
+    padding: 0;
+    padding-top: 5px;
 }
 .description {
     display: flex;
     width: 100%;
-        align-items: flex-end;
-    
-    /* align-items: flex-end; */
-    /* justify-content: space-around; */
 }
-
-.description-list{
+.description__list{
     display: flex;
-        /* align-items: flex-end; */
-    /* margin: auto; */
-    /* justify-content: space-between; */
+    justify-content: flex-start;
+    width: 100%;
+    align-items: flex-start;
+    font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
 
+color: #FFFFFF;
 }
+
 .developers__list-item{
-    /* justify-content: space-between */
-    display: flex;
-    /* display: inline-flex; */
-    /* margin: auto; */
-    /* align-items: center; */
-
-    /* align-items: center;  */
-    /* flex-direction: ; */
-    margin-bottom: 100px;
+   width: 30%;
+}
+.developers__text {
     
 }
-.developers__text{
-    /* display: flex; */
-    /* align-items: flex-start */
+
+.company-rating {
+    position: relative;
+    font-size: 20px;
+    display: inline-block;
+}
+
+.company-rating::before {
+    content: "★★★★★";    
+    display: block;
+}
+
+.company-rating__items {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    overflow: hidden;
+}
+ .company-rating__item{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+ }
+
+ .company-rating__label{
+    flex: 0 0 20%;
+    height: 100%;
+    cursor: pointer;
+    color: #FFF;
+
+ }
+ .company-rating__label::before{
+    content: "★";
+    display: block;
+    transition: color 0.3s ease 0s;
+ }
+ .company-rating__item:checked,
+ .company-rating__item ~.company-rating__label{
+    color: #ffd300;
+ }
+
+.company-rating__label:hover,
+.company-rating__label:hover ~ .company-rating__label,
+.company-rating__label:checked ~ .company-rating__label:hover{
+    color: #ffef9f ;
 }

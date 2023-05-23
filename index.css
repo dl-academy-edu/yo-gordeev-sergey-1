@@ -112,6 +112,7 @@ color: #1E0606;
     margin-left: 8px;
     margin-top: 3px;
     padding: 7px 21px;
+    border: none;
     gap: 10px;
     left: 243px;
     top: 474px;
@@ -183,13 +184,14 @@ color: #1E0606;
 }
 
 .category__img-text{
-  
+     display: flex;
     position: absolute;
+    justify-content: center;
+    align-items: center;
     left: 15.71%;
     right: 15.71%;
-    top: 44.07%;
+    top: 40.07%;
     bottom: 44.07%;
-    
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
@@ -197,19 +199,10 @@ color: #1E0606;
     line-height: 32px;
     text-align: center;
     text-transform: uppercase;
-    
     color: #FFFFFF;
-    
     text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
 }
 
-
-/* не могу понять как выроовнить два заголовка из 4, только если им отдельный класс дать? */
-.category__img-text:nth-child(n+2){
-    margin-top: 0px;
-    margin-left: 0px;
-    /* псевдоклассы двигают все 4 названя */
-}
 
 .cetegory__btn {
     display: flex;
@@ -224,6 +217,7 @@ color: #1E0606;
     margin-left: 20px;
     width: 580px;
     margin-top: 0px;
+    border: none;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
@@ -252,7 +246,10 @@ color: #1E0606;
 }
 .delivery {
     display: flex;
-    margin-top: 57px;
+    margin-top: 40px;
+}
+.delivery__img {
+    margin-top: 15px;
 }
 .delivery__list {
     padding-top: 0px;
@@ -285,4 +282,146 @@ font-style: normal;
 font-weight: 400;
 font-size: 16px;
 line-height: 22px;
+}
+.delivery__list-btn {
+    align-items: center;
+    margin-left: 8px;
+    margin-top: 3px;
+    padding: 7px 21px;
+    gap: 10px;
+    left: 243px;
+    top: 474px;
+    border: none;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    background: #000000;
+}
+
+.partners__title {
+    opacity: 0; 
+}
+
+.partners__list-item {
+    display: flex;
+}
+.partners__list-link {
+    display: flex;
+}
+
+.partners__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 45px;
+    padding: 0px;
+}
+
+.design {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 46px;
+}
+.design__title{
+    opacity: 0;
+    max-width: 1px;
+}
+.design__list{
+    max-width: 543px;
+    margin-top: 43px;
+    margin-right: 45px;
+}
+.design__list-item {
+    
+    padding: 31px 30px 27px 30px;
+    background: #E1F0F7;
+}
+.design__list-subtitle{
+    margin-top: 1px;
+    margin-left: 1px;
+    font-family: 'Crimson Text';
+font-style: italic;
+font-weight: 400;
+font-size: 26px;
+line-height: 34px;
+}
+
+.design__list-text {
+    margin-top: -13px;
+    margin-left: 1px;
+    font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+}
+
+.design__list-title {
+    margin-bottom: -40px;
+    margin-left: 30px;  
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 38px;
+line-height: 46px;
+text-transform: uppercase;
+}
+
+.desingn__btn {
+    align-items: center;
+    margin-top: 20px;
+    padding: 7px 21px;
+    border: none;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    background: #000000;
+}
+
+.contact {
+    padding: 0 30px;
+
+}
+.contact__paragraph {
+    margin-top: 12px;
+    margin-left: -5px;
+    padding: 41px 30px 102px 20px;
+    max-width: 538px;
+    background: #E1F0F7;
+
+
+    font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+
+}
+.contact__title {
+    margin-top: 74px;
+    margin-bottom: -30px;
+    margin-left: -15px;
+    padding: 0 30px;
+
+
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 38px;
+line-height: 46px;;
+}
+
+.contact__map {
+    margin-top: -90px;
+    margin-left: 15px;
 }
