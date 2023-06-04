@@ -1,0 +1,144 @@
+.category__title {
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 49px;
+color: #1E0606;
+}
+.crumbs{
+    display: flex;
+    
+}
+
+.breadcrumb{
+    display: flex;
+    padding: 0;
+
+}
+.crumb__link::after{
+    content: url(../img/VectorCrumb.svg);
+    margin: 20px;
+    
+}
+
+.crumb{
+    font-family: 'Crimson Text';
+font-style: italic;
+font-weight: 400;
+font-size: 20px;
+line-height: 26px;
+color: #1E0606;
+
+}
+
+.active {
+    font-family: 'Crimson Text';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #1E0606;
+    opacity: 0.5;
+}
+
+.category__list {
+    display: flex;
+    padding: 0;
+    width: 1080px;
+    flex-wrap: wrap;
+    row-gap: 34px;
+    column-gap: 20px;   
+}
+.category__list-item {
+    display: flex;
+    margin-top: -18px;
+    width:280px;
+    height:270px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.category__list-link{
+    display: flex;   
+}
+
+.category__list-item:nth-child(6n+1){
+   background: #DBE4DB; 
+}
+
+.category__list-item:nth-child(6n+2){
+    background: #EADDD3;
+}
+
+.category__list-item:nth-child(6n+3){
+    background: #F8F2DA;
+}
+
+.category__list-item:nth-child(6n+4){
+    background: #D5D4E1;
+    margin-left: 10%;
+}
+.category__list-item:nth-child(6n+5){
+    background: #F3D0DB;
+}
+.category__list-item:nth-child(6n+6){
+    background: #E5EAF8;
+}
+
+.category__img-text{
+     display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    left: 15.71%;
+    right: 15.71%;
+    top: 40.07%;
+    bottom: 44.07%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
+}
+.category__img-text:hover,
+.category__img-text:active {
+    text-decoration: underline;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+}
+.product__list{
+    margin-left: 58px;
+    display: flex;
+    flex-direction: column;
+}
+.product__title {
+    margin-left: 104px;
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 38px;
+line-height: 46px;
+text-transform: uppercase;
+color: #1E0606;
+}
+
+.product__itel-text {
+  
+    max-width: 680px;
+    font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+color: #1E0606;
+}

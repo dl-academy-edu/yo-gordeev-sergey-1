@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/common.css">
+    <link rel="stylesheet" href="../style/common.css">
+    <link rel="stylesheet" href="../style/blog.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
     <title>Blog</title>
 </head>
 <body>
-    <header class="header conteiner">
+    <header class="header conteiner ">
         <a class="header__logo" href="/"><img class="header__logo-img" src="../img/Union.png" alt="Logotype of DLK" width="100px"height="52px"></a>
         <nav class="header__link">
             <ul class="header__list">
@@ -17,129 +21,148 @@
                 <li class="header__list-item"><a class="header__list-link" href="#">ABOUT US</a></li>
             </ul>
         </nav>
-           <ul class="header__search">
-                <li class="header__search-list">
-                    <img class="search__img" src="#" alt="search"></li>
+        <ul class="header__search">
+            <li class="header__search-list">
+                <img class="search__img" src="#" alt="search"></li>
                 <li class="search__list">
-                    <a class="search__link" href="#">CONTACT US</a> 
-                </li>
+                <a class="search__link" href="#">CONTACT US</a> 
+            </li>
+        </ul>
+    </header>
+<main>
+    <section class="title conteiner">
+        <h1 class="title-text">Blog</h1>
+        <div class="crumbs">
+            <ul class="breadcrumb">
+              <li class="crumb"><a class="crumb__link" href="../index.html">Home</a></li>
+              <li class="crumb active">Blog</a></li>
             </ul>
-        </header>
-    <main>
-        <section class="title">
-            <h1 class="title-text">Blog</h1>
-            <ul class="breadcrumbs">
-                <li class="breadcrumbs__list"><a class="breadcrumbs__list-link" href="/index.html">Home</a></li>
-                <li class="breadcrumbs__list"><a class="breadcrumbs__list-link" href="./blog.html">Blog</a></li> 
-            </ul>
-        </section>
-        <section class="articles">
-            <ul class="articles__list">
+        </div>  
+    </section>
+    <section class="articles conteiner">
+        <ul class="articles__list">
             <li class="articles__items">
-                <img class="articles__img" src="../img/blog1.jpg" alt="picture">23rd August 2018 
+                <img class="articles__img" src="../img/blog1.jpg" alt="picture"><label class="articles__data-img" for="">23rd August 2018</label> 
                 <h2 class="articles__item">Top 5 fastest growing it service companies in philly</h2>                       
                  <p class="articles__text">Direct Line Development’s Team is excited to announce that we received UpCity’s 2019 Local Excellence Award! This prestigious award is annually presented to the Top 1% of service providers in the given marketplace.</p>
             </li>
         </ul>
         <ul class="articles__list">
             <li class="articles__items">
-                <img class="articles__img" src="../img/blog2.jpg" alt="picture">23rd August 2018 
+                <img class="articles__img" src="../img/blog2.jpg" alt="picture"><label class="articles__data-img" for="">23rd August 2018</label> 
                 <h2 class="articles__item">Best financial</h2>
                 <p class="articles__text">Direct Line Development is honored to be recognized as one of the Top 100 Fastest Growing Companies 2019 in Philadelphia, according to Growjo’s ranking.
             </li>
         </ul>
         <ul class="articles__list">
             <li class="articles__items">
-                <img class="articles__img" src="../img/blog3.jpg" alt="picture">23rd August 2018 
+                <img class="articles__img" src="../img/blog3.jpg" alt="picture"><label class="articles__data-img" for="">23rd August 2018</label> 
                 <h2 class="articles__item">Company logo or brand identity: which one is more important? brand identity</h2>
                 <p class="articles__text">To survive in the world of digital marketing, you need to keep up with the latest SEO trends. Here are our simple, but effective, SEO tips for small business success..
             </li>
         </ul>
         <ul class="articles__list">
             <li class="articles__items">
-                <img class="articles__img" src="../img/blog4.jpg" alt="picture">23rd August 2018 
+                <img class="articles__img" src="../img/blog4.jpg" alt="picture"><label class="articles__data-img" for="">23rd August 2018</label> 
                 <h2 class="articles__item">Best financial</h2>
                 <p class="articles__text">Direct Line Development is honored to be recognized as one of the Top 100 Fastest Growing Companies 2019 in Philadelphia, according to Growjo’s ranking.
             </li>
         </ul>
         <ul class="articles__list">
             <li class="articles__items">
-                <img class="articles__img" src="../img/blog5.jpg" alt="picture">23rd August 2018 
+                <img class="articles__img" src="../img/blog5.jpg" alt="picture"><label class="articles__data-img" for="">23rd August 2018</label> 
                 <h2 class="articles__item">Company logo or brand identity: which one is more important? brand identity</h2>
-                <p class="articles__text">To survive in the world of digital marketing, you need to keep up with the latest SEO trends. Here are our simple, but effective, SEO tips for small business success..
+                <p class="articles__text">To survive in the world of digital marketing, you need to keep up with the latest SEO trends. Here are our simple, but effective, SEO tips for small business success.
             </li>
         </ul>
         <ul class="articles__list">
             <li class="articles__items">
-                <img class="articles__img" src="../img/blog6.jpg" alt="picture">23rd August 2018 
+                <img class="articles__img" src="../img/blog6.jpg" alt="picture"><label class="articles__data-img" for="">23rd August 2018</label> 
                 <h2 class="articles__item">Top 5 fastest growing it service companies in philly</h2>
                 <p class="articles__text">Direct Line Development’s Team is excited to announce that we received UpCity’s 2019 Local Excellence Award! This prestigious award is annually presented to the Top 1% of service providers in the given marketplace.
             </li>
         </ul>
     </section>
-    <section class="row">
-        <ul class="page">  <!--не разобрался, что это(ссылки, крошки или что иное?)--> 
-            <li class="page__list"><a class="page_previous"  href="#" rel="prev">#</a></li> <!--пример ссылка-->   
-            <li class="page__list"><a class="page__list-link" href="#">1</a></li>
-            <li class="page__list"><a class="page__list-link" href="#">2</a></li>
-            <li class="page__list"><a class="page__list-link" href="#">3</a></li>
-            <li class="page__list"><a class="page__list-link" href="#">4</a></li>
-            <li class="page__list"><a class="page_up"  href="#" rel="next">#</a></li>
-        </ul>
+    <section class="page conteiner">
+        <div class="pages">
+            <input class="pages__previous" type="button" value="" aria-label="prev">
+            <ul class="pages__list"> 
+                <li class="pages__item"><a class="pages__list-link" href="#">1</a></li>
+                <li class="pages__item"><a class="pages__list-link" href="#">2</a></li>
+                <li class="pages__item"><a class="pages__list-link" href="#">3</a></li>
+                <li class="pages__item"><a class="pages__list-link" href="#">4</a></li>
+            </ul>
+            <input class="pages__up" type="button" value="" aria-label="next">
+        </div>
     </section>
 </main>
-    <footer class="footer">
-         <section class="navigation">
+<footer class="footer">
+    <section class="footer__item">
+        <article class="navigation">
+            <h2 class="navigation__title">navigation title</h2>
             <ul class="navigation__list">
-                <li class="navigation__list-item"><a class="navigation__title-link" href="#">Navigation</a></li>
+                <li class="navigation__list-item"><p class="navigation__title-item">Navigation</p></li>
                 <li class="navigation__list-item"><a class="navigation__list-link" href="#">About Us</a></li>
                 <li class="navigation__list-item"><a class="navigation__list-link" href="#">Blog</a></li>
                 <li class="navigation__list-item"><a class="navigation__list-link" href="#">Design Services</a></li>
                 <li class="navigation__list-item"><a class="navigation__list-link" href="#">Featured On</a></li>
                 <li class="navigation__list-item"><a class="navigation__list-link" href="#">2018 Holiday Catalog</a></li>
                 <li class="navigation__list-item"><a class="navigation__list-link" href="#">Shop By Designer</a></li>
-            </ul>
-            <ul class="information">
-                <li class="information__list-item"><a class="information__title-link"href="#">Customer Information</a>            
+        </ul>
+        </article>
+        <article class="information">
+            <h2 class="information__title">information title</h2>
+            <ul class="information__list">
+                <li class="information__list-item"><p class="information__title-item">Customer Information</p></li> 
                 <li class="information__list-item"><a class="information__list-link" href="#">Contact Us</a></li>
                 <li class="information__list-item"><a class="information__list-link" href="#">Sale Exclusions</a></li>
                 <li class="information__list-item"><a class="information__list-link" href="#">Shipping & Returns</a></li>
                 <li class="information__list-item"><a class="information__list-link" href="#">Terms & Conditions</a></li>
                 <li class="information__list-item"><a class="information__list-link" href="#">Privacy Policy</a></li>
-                <li class="Information__list-item"><a class="information__list-link" href="#">Search</a></li>
+                <li class="information__list-item"><a class="information__list-link" href="#">Search</a></li>
             </ul>
-            <ul class="connect">
-                <a class="connect__title-link" href="#">Connect</a>
-                <form action="" method="get">
-                <input type="email" value="Email"> <button class="btn">JOIN</button></form></ul>
-            <ul>
-                <li class="connect__list-item"><a class="connect__list-link" href="#">facebook<img src="#" alt="facebook"></a></li>
-                <li class="connect__list-item"><a class="connect__list-link" href="#">twetter<img src="#" alt="twetter"></a></li>
-                <li class="connect__list-item"><a class="connect__list-link" href="#">pinterest<img src="#" alt="pinterest"></a></li>
-                <li class="connect__list-item"><a class="connect__list-link" href="#">instagram<img src="#" alt="instagram"></a></li>
+        </article>
+        <article class="connect">
+            <h2 class="connect__title">connect title</h2>
+            <p class="connect__title-item">Connect</p>
+            <form class="connect__input" action="#" method="get">
+                <input class="connect__email" type="email" value="Email">
+                <button class="connect__btn">JOIN</button>
+            </form> 
+            <ul class="connect__list">
+                <li class="connect__list-item"><a class="connect__list-link" href="#"><img src="./img/f.png" alt="facebook"></a></li>
+                <li class="connect__list-item"><a class="connect__list-link" href="#"><img src="./img/t.png" alt="twetter"></a></li>
+                <li class="connect__list-item"><a class="connect__list-link" href="#"><img src="./img/p.png" alt="pinterest"></a></li>
+                <li class="connect__list-item"><a class="connect__list-link" href="#"><img src="./img/i.png" alt="instagram"></a></li>
             </ul>
-            <ul class="developers">
-                <li class="developers__list"><div class="developers__list-item">Company Rating</div></li>
-                <li class="developers__list">
-                    <form>
-                        <div class="rating-area">
-                            <input type="radio" id="star-5" name="rating" value="5">
-                            <label for="star-5" title="Evaluation «5»"></label>	
-                            <input type="radio" id="star-4" name="rating" value="4">
-                            <label for="star-4" title="Evaluation «4»"></label>    
-                            <input type="radio" id="star-3" name="rating" value="3">
-                            <label for="star-3" title="Evaluation «3»"></label>  
-                            <input type="radio" id="star-2" name="rating" value="2">
-                            <label for="star-2" title="Evaluation «2»"></label>    
-                            <input type="radio" id="star-1" name="rating" value="1">
-                            <label for="star-1" title="Evaluation «1»"></label>
-                        </div>
-                    </form>
-                </li>
-                <li class="developers__list"><div class="developers__list-item">Copyright © 2018 Dlk • Design Life Kids</div></li>
-                <li class="developers__list"><div class="developers__item">Web Design — Direct Line Development</div></li>
-            </ul>
-        </section>
-    </footer>    
+        </article>
+        <article class="description">
+            <h2 class="description__title">description title</h2>
+            <ul class="description__list">
+               <li class="developers__list-item">
+                   <form class="developers__text"> 
+                       <div class="rating">Company Rating</div>
+                           <div class="company-rating">
+                               <div class="company-rating__items">
+                                   <input class="company-rating__item" type="radio" id="company-rating__5" name="company-rating" aria-label="5" value="5">
+                                   <label class="company-rating__label" for="company-rating__5"></label>
+                                   <input class="company-rating__item" type="radio" id="company-rating__4" name="company-rating" aria-label="4" value="4">
+                                   <label class="company-rating__label" for="company-rating__4"></label>
+                                   <input class="company-rating__item" type="radio" id="company-rating__3" name="company-rating" aria-label="3" value="3">
+                                   <label class="company-rating__label" for="company-rating__3"></label>
+                                   <input class="company-rating__item" type="radio" id="company-rating__2" name="company-rating" aria-label="2" value="2">
+                                   <label class="company-rating__label" for="company-rating__2"></label>
+                                   <input class="company-rating__item" type="radio" id="company-rating__1" name="company-rating" aria-label="1" value="1">
+                                   <label class="company-rating__label" for="company-rating__1"></label>
+                               </div>
+                           </div>    
+                   </form>
+               </li>
+               <li class="developers__list-item"><p class="developers__text">Copyright © 2018 Dlk • Design Life Kids</p></li>
+               <li class="developers__list-item"><p class="developers__text">Web Design — Direct Line Development</p></li>
+           </ul>
+        </article>
+    </section>
+</footer>  
 </body>
 </html>

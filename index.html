@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/common.css">
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./style/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@200;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 
     <title>DLK</title>
 </head>
@@ -26,7 +26,7 @@
         </nav>
            <ul class="header__search">
                 <li class="header__search-list">
-                    <img class="search__img" src="../img/search.svg" alt="search"></li>
+                    <button class="searh__btn" type="button"></button>
                 <li class="search__list">
                     <a class="search__link" href="#">CONTACT US</a> 
                 </li>
@@ -76,19 +76,20 @@
                 </ul>
             </form>
         </section>
-        <section class="delivery conteiner"> 
+        <article class="delivery conteiner"> 
             <img class="delivery__img" src="./img/photo.png" alt="photo">
-            <!-- <h2 class="delivery__title">DELIVERY</h2>   пробник -->
-            <ul class="delivery__list">
-                <li class="delivery__list-item"><h2 class="delivery__title">DELIVERY</h2></li>
-                <li class="delivery__list-item"><button class="delivery__list-link">Delivery</button></li>
-                <li class="delivery__list-item"><button class="delivery__list-link">Guarantee</button></li>
-                <li class="delivery__list-item"><button class="delivery__list-link">Credit</button></li>
-                <li class="delivery__list-item"><p class="delivery__list-text">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p></li>
-                <li class="delivery__list-item"><p class="delivery__list-text">What started as an outlet to deal  with the traumatic loss of my husband, dlk has now become a truly happy place for me and i have you and all of the beautiful designers that we work with to thank!</p></li>
-                <li class="delivery__list-item"><button class="delivery__list-btn" type="button" name="button">LEARN MORE</button></li>
-            </ul>
-        </section>
+            <div class="delivery__items">
+                <h2 class="delivery__title">DELIVERY</h2>
+                <ul class="delivery__list">
+                    <li class="delivery__list-item"><button class="delivery__list-button">Delivery</button></li> <!--не выходит добавить размер шрифта через доп класс-->
+                    <li class="delivery__list-item"><button class="delivery__list-button">Guarantee</button></li>
+                    <li class="delivery__list-item"><button class="delivery__list-button">Credit</button></li>
+                </ul>
+                <p class="delivery__text">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
+                <p class="delivery__text">What started as an outlet to deal  with the traumatic loss of my husband, dlk has now become a truly happy place for me and i have you and all of the beautiful designers that we work with to thank!</p>
+                <button class="delivery__btn" type="button" name="button">LEARN MORE</button>
+            </div>
+        </article>
         <section class="partners conteiner">
             <h2 class="partners__title">partners title</h2>
             <ul class="partners__list">
@@ -117,9 +118,10 @@
         </section>
     </main>
     <footer class="footer">
-        <section class="navigation">
-            <h2 class="navigation__title">navigation title</h2>
-            <ul class="navigation__list">
+        <section class="footer__item">
+            <article class="navigation">
+                <h2 class="navigation__title">navigation title</h2>
+                <ul class="navigation__list">
                 <li class="navigation__list-item"><p class="navigation__title-item">Navigation</p></li>
                 <li class="navigation__list-item"><a class="navigation__list-link" href="#">About Us</a></li>
                 <li class="navigation__list-item"><a class="navigation__list-link" href="#">Blog</a></li>
@@ -128,57 +130,60 @@
                 <li class="navigation__list-item"><a class="navigation__list-link" href="#">2018 Holiday Catalog</a></li>
                 <li class="navigation__list-item"><a class="navigation__list-link" href="#">Shop By Designer</a></li>
             </ul>
-        </section>
-        <section class="information">
-            <h2 class="information__title">information title</h2>
-            <ul class="information__list">
-                <li class="information__list-item"><p class="information__title-item">Customer Information</p></li> 
-                <li class="information__list-item"><a class="information__list-link" href="#">Contact Us</a></li>
-                <li class="information__list-item"><a class="information__list-link" href="#">Sale Exclusions</a></li>
-                <li class="information__list-item"><a class="information__list-link" href="#">Shipping & Returns</a></li>
-                <li class="information__list-item"><a class="information__list-link" href="#">Terms & Conditions</a></li>
-                <li class="information__list-item"><a class="information__list-link" href="#">Privacy Policy</a></li>
-                <li class="information__list-item"><a class="information__list-link" href="#">Search</a></li>
-            </ul>
-        </section>
-        <section class="connect">  
-            <h2 class="connect__title">connect title</h2>
-            <p class="connect__title-item">Connect</p>
-            <form class="connect__input" action="#" method="get">
-                <input class="connect__email" type="email" value="Email">
-                <button class="connect__btn">JOIN</button>
-            </form> 
-            <ul class="connect__list">
-                <li class="connect__list-item"><a class="connect__list-link" href="#"><img src="./img/f.png" alt="facebook"></a></li>
-                <li class="connect__list-item"><a class="connect__list-link" href="#"><img src="./img/t.png" alt="twetter"></a></li>
-                <li class="connect__list-item"><a class="connect__list-link" href="#"><img src="./img/p.png" alt="pinterest"></a></li>
-                <li class="connect__list-item"><a class="connect__list-link" href="#"><img src="./img/i.png" alt="instagram"></a></li>
-            </ul>
-        </section>
-        <section class="description">
-            <h2 class="description__title">description title</h2>
-             <ul class="description__list">
-                <li class="developers__list-item">
-                    <form class="developers__text"> 
-                        <div class="company-rating">Company Rating</div>
-                            <div class="company-rating__items">
-                                <input class="company-rating__item" type="radio" id="company-rating__5"name="company-rating" value="5">
-                                <label class="company-rating__label" for="company-rating__5"></label>
-                                <input class="company-rating__item" type="radio" id="company-rating__4"name="company-rating" value="4">
-                                <label class="company-rating__label" for="company-rating__4"></label>
-                                <input class="company-rating__item" type="radio" id="company-rating__3"name="company-rating" value="3">
-                                <label class="company-rating__label" for="company-rating__3"></label>
-                                <input class="company-rating__item" type="radio" id="company-rating__2"name="company-rating" value="2">
-                                <label class="company-rating__label" for="company-rating__2"></label>
-                                <input class="company-rating__item" type="radio" id="company-rating__1"name="company-rating" value="1">
-                                <label class="company-rating__label" for="company-rating__1"></label>
-                            </div>
-                    </form>
-                </li>
-                <li class="developers__list-item"><p class="developers__text">Copyright © 2018 Dlk • Design Life Kids</p></li>
-                <li class="developers__list-item"><p class="developers__text">Web Design — Direct Line Development</p></li>
-            </ul>
+            </article>
+            <article class="information">
+                <h2 class="information__title">information title</h2>
+                <ul class="information__list">
+                    <li class="information__list-item"><p class="information__title-item">Customer Information</p></li> 
+                    <li class="information__list-item"><a class="information__list-link" href="#">Contact Us</a></li>
+                    <li class="information__list-item"><a class="information__list-link" href="#">Sale Exclusions</a></li>
+                    <li class="information__list-item"><a class="information__list-link" href="#">Shipping & Returns</a></li>
+                    <li class="information__list-item"><a class="information__list-link" href="#">Terms & Conditions</a></li>
+                    <li class="information__list-item"><a class="information__list-link" href="#">Privacy Policy</a></li>
+                    <li class="information__list-item"><a class="information__list-link" href="#">Search</a></li>
+                </ul>
+            </article>
+            <article class="connect">
+                <h2 class="connect__title">connect title</h2>
+                <p class="connect__title-item">Connect</p>
+                <form class="connect__input" action="#" method="get">
+                    <input class="connect__email" type="email" value="Email">
+                    <button class="connect__btn">JOIN</button>
+                </form> 
+                <ul class="connect__list">
+                    <li class="connect__list-item"><a class="connect__list-link" href="#"><img src="./img/f.png" alt="facebook"></a></li>
+                    <li class="connect__list-item"><a class="connect__list-link" href="#"><img src="./img/t.png" alt="twetter"></a></li>
+                    <li class="connect__list-item"><a class="connect__list-link" href="#"><img src="./img/p.png" alt="pinterest"></a></li>
+                    <li class="connect__list-item"><a class="connect__list-link" href="#"><img src="./img/i.png" alt="instagram"></a></li>
+                </ul>
+            </article>
+            <article class="description">
+                <h2 class="description__title">description title</h2>
+                <ul class="description__list">
+                   <li class="developers__list-item">
+                       <form class="developers__text"> 
+                           <div class="rating">Company Rating</div>
+                               <div class="company-rating">
+                                   <div class="company-rating__items">
+                                       <input class="company-rating__item" type="radio" id="company-rating__5" name="company-rating" aria-label="5" value="5">
+                                       <label class="company-rating__label" for="company-rating__5"></label>
+                                       <input class="company-rating__item" type="radio" id="company-rating__4" name="company-rating" aria-label="4" value="4">
+                                       <label class="company-rating__label" for="company-rating__4"></label>
+                                       <input class="company-rating__item" type="radio" id="company-rating__3" name="company-rating" aria-label="3" value="3">
+                                       <label class="company-rating__label" for="company-rating__3"></label>
+                                       <input class="company-rating__item" type="radio" id="company-rating__2" name="company-rating" aria-label="2" value="2">
+                                       <label class="company-rating__label" for="company-rating__2"></label>
+                                       <input class="company-rating__item" type="radio" id="company-rating__1" name="company-rating" aria-label="1" value="1">
+                                       <label class="company-rating__label" for="company-rating__1"></label>
+                                   </div>
+                               </div>    
+                       </form>
+                   </li>
+                   <li class="developers__list-item"><p class="developers__text">Copyright © 2018 Dlk • Design Life Kids</p></li>
+                   <li class="developers__list-item"><p class="developers__text">Web Design — Direct Line Development</p></li>
+               </ul>
+            </article>
         </section>
     </footer>
 </body>
-</html>   
+</html> 
