@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/common.css">
     <link rel="stylesheet" href="../style/toys.css">
+    <link rel="stylesheet" href="../js/toys.js">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@200;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
@@ -14,8 +15,8 @@
 <body>
     <header class="header conteiner">
         <a class="header__logo" href="/">
-            <img class="header__logo-img" src="../img/Union.png" alt="Logotype of DLK" width="100px"
-            height="52px"></a>
+            <img class="header__logo-img" src="../img/Union.png" alt="Logotype of DLK" width="100"
+            height="52"></a>
         <nav class="header__link">
             <ul class="header__list">
                 <li class="header__list-item"><a class="header__list-link" href="../page/blog.html">BLOG</a></li>
@@ -25,9 +26,9 @@
         </nav>
            <ul class="header__search">
                 <li class="header__search-list">
-                    <img class="search__img" src="#" alt="search"></li>
+                    <button class="searh__btn"  type="button"></button>
                 <li class="search__list">
-                    <a class="search__link" href="#">CONTACT US</a> 
+                    <a class="search__link" href="../page/contactUs.html">CONTACT US</a> 
                 </li>
             </ul>
         </header>
@@ -43,50 +44,72 @@
             </div>               
         </section>
         <section class="filter conteiner">
-            <ul class="cost">
-                <li class="cost__slider">
-                    <form class="styled-slider slider-progress" action="">
-                        <p class="cost__item">0</p>
-                        <label for="Cost">
-                            <input class="styled-slider__list-item" type="range">
-                            <p class="styled-slider__item">500</p>
-                        </label>
-                    </form>
-                </li>
-            </ul>
-            <ul class="color">
-                <form class="color__title" action="">Color
-                    <li class="color__list"><input class="color__list-item" type="checkbox">Black</li>
-                    <li class="color__list"><input class="color__list-item" type="checkbox">Blue</li>
-                    <li class="color__list"><input class="color__list-item" type="checkbox">Green</li>
-                    <li class="color__list"><input class="color__list-item" type="checkbox">White</li>
-                </form>
-            </ul>
-            <ul class="filterDelivery">
-                <form action="">Delivery
-                    <li class="filterDelivery__list"><input class="filterDelivery__list-item" type="radio">Free shipping</li>
-                    <li class="filterDelivery__list"><input class="filterDelivery__list-item" type="radio">Fast shopping</li>
-                </form>
-            </ul>
-            <ul class="amount">
-                <form action="">Amount
-                    <li><input type="radio" name="amount" value ="0-5" id="#"></li>
-                    <li><input type="radio" name="amount" value ="10-20" id="#"></li>
-                    <li><input type="radio" name="amount" value ="20-50"id="#"></li>
-                </form>
-            </ul>
-            <ul class="filterBtn">
-                <li class="filterBtn__list"><button class="filterBtn__list-btn">Apply</button></li>
-            </ul>
+            <form class="slider" action="">
+                <div class="slider__list">
+                    <label class="slider__label" for="cost">Cost</label>
+                    <input class="styled-slider slider-progress" type="range" min="0" max="500">    
+                </div>
+            </form>
+            <form class="color__title" action="">Color
+                <div class="color">
+                    <div class="color__list">
+                        <input class="color__list-input visually-hidden" type="checkbox" id="black"></li>
+                        <label class="color__label" for="black">Black</label>
+                    </div>
+                    <div class="color__list">
+                        <input class="color__list-input visually-hidden" type="checkbox" id="blue"></li>
+                        <label class="color__label" for="blue">Blue</label>
+                    </div>
+                    <div class="color__list">
+                        <input class="color__list-input visually-hidden" type="checkbox" id="green"></li>
+                        <label class="color__label" for="green">Green</label>
+                    </div>
+                    <div class="color__list">
+                        <input class="color__list-input visually-hidden" type="checkbox" id="white"></li>
+                        <label class="color__label" for="white">White</label>
+                    </div>
+                </div>
+            </form>
+            <form  class="delivery__title" action="">Delivery
+                <div class="filterDelivery">
+                    <input class="filterDelivery__input visually-hidden" name="shipping" type="radio" id="free"></li>
+                    <label class="filterDelivery__label" for="free">Free shipping</label>
+                </div>
+                <div class="filterDelivery">
+                    <input class="filterDelivery__input visually-hidden" name="shipping" type="radio" id="fast"></li>
+                    <label class="filterDelivery__label" for="fast">Fast shipping</label>
+                </div>
+            </form>
+            <form class="amount" action="">Amount
+                <div class="amount__list">
+                    <div class="amount__btn">
+                        <input class="amount__input" name="amount" aria-label="0-5" value="0-5" type="radio" id="0-5"></li>
+                        <label class="amount__label" for="0-5">0-5</label>
+                    </div>
+                    <div class="amount__btn">
+                        <input class="amount__input" name="amount" aria-label="10-20" value="10-20" type="radio" id="10-20"></li>
+                        <label class="amount__label" for="10-20">10-20</label>
+                    </div>
+                    <div class="amount__btn">
+                        <input class="amount__input" name="amount" aria-label="20-50" value="20-50" type="radio" id="20-50"></li>
+                        <label class="amount__label" for="20-50">20-50</label>
+                    </div>                        
+                </div>
+            </form>
+            <form class="filterBtn" action="">
+                <div class="filterBtn__list">
+                    <div class="filterBtn__item"><button class="filterBtn__item-btn">Apply</button></div>
+                </div>
+            </form>
         </section>
-        <section class="catalog conteiner">
+        <section class="catalog conteiner"> 
             <ul class="catalog__list">
-                <li class="catalog__list-item"><a class="catalog__list-link" href="#"><img class="catalog__list-img"src="../img/prod1.png" alt="bag">SHARKY BEAN BAG CHAIR COVER<p class="catalog__list-text">$60.00 USD</p></a></li>
-                <li class="catalog__list-item"><a class="catalog__list-link" href="#"><img class="catalog__list-img"src="../img/prod2.png" alt="frames">BRASS DECO FRAMES</a><p class="catalog__list-text">$66.00 USD</p></li>
-                <li class="catalog__list-item"><a class="catalog__list-link" href="#"><img class="catalog__list-img"src="../img/prod3.png" alt="apron">CIBO FULL APRON</a><p class="catalog__list-text">$60.00 USD</p></li>
-                <li class="catalog__list-item"><a class="catalog__list-link" href="#"><img class="catalog__list-img"src="../img/prod4.png" alt="gumball">GATCHA GATCHA GUMBALL MACHINE</a><p class="catalog__list-text">$56.00 USD</p></li>
-                <li class="catalog__list-item"><a class="catalog__list-link" href="#"><img class="catalog__list-img"src="../img/prod5.png" alt="candle">CHRISTMAS ADVENT SCENTED CANDLE</a><p class="catalog__list-text">$29.00 USD</p></li>
-                <li class="catalog__list-item"><a class="catalog__list-link" href="#"><img class="catalog__list-img"src="../img/prod6.png" alt="light">TANGLE SPINNING TEA LIGHT</a><p class="catalog__list-text">$56.00 USD</p></li>
+                <li class="catalog__list-item"><a class="catalog__list-link" href="#">learn more</a><img class="catalog__list-img"src="../img/prod1.png" alt="bag">SHARKY BEAN BAG CHAIR COVER<p class="catalog__list-text">$60.00 USD</p></a></li>
+                <li class="catalog__list-item"><a class="catalog__list-link" href="#">learn more</a><img class="catalog__list-img"src="../img/prod2.png" alt="frames">BRASS DECO FRAMES<p class="catalog__list-text">$66.00 USD</p></li>
+                <li class="catalog__list-item"><a class="catalog__list-link" href="#">learn more</a><img class="catalog__list-img"src="../img/prod3.png" alt="apron">CIBO FULL APRON<p class="catalog__list-text">$60.00 USD</p></li>
+                <li class="catalog__list-item"><a class="catalog__list-link" href="#">learn more</a><img class="catalog__list-img"src="../img/prod4.png" alt="gumball">GATCHA GATCHA GUMBALL MACHINE<p class="catalog__list-text">$56.00 USD</p></li>
+                <li class="catalog__list-item"><a class="catalog__list-link" href="#">learn more</a><img class="catalog__list-img"src="../img/prod5.png" alt="candle">CHRISTMAS ADVENT SCENTED CANDLE<p class="catalog__list-text">$29.00 USD</p></li>
+                <li class="catalog__list-item"><a class="catalog__list-link" href="#">learn more</a><img class="catalog__list-img"src="../img/prod6.png" alt="light">TANGLE SPINNING TEA LIGHT<p class="catalog__list-text">$56.00 USD</p></li>
             </ul>
         </section>
         <section class="page conteiner">
@@ -136,10 +159,10 @@
                     <button class="connect__btn">JOIN</button>
                 </form> 
                 <ul class="connect__list">
-                    <li class="connect__list-item"><a class="connect__list-link" href="#"><img src="./img/f.png" alt="facebook"></a></li>
-                    <li class="connect__list-item"><a class="connect__list-link" href="#"><img src="./img/t.png" alt="twetter"></a></li>
-                    <li class="connect__list-item"><a class="connect__list-link" href="#"><img src="./img/p.png" alt="pinterest"></a></li>
-                    <li class="connect__list-item"><a class="connect__list-link" href="#"><img src="./img/i.png" alt="instagram"></a></li>
+                    <li class="connect__list-item"><a class="connect__list-link" href="#"><img src="../img/f.png" alt="facebook"></a></li>
+                    <li class="connect__list-item"><a class="connect__list-link" href="#"><img src="../img/t.png" alt="twetter"></a></li>
+                    <li class="connect__list-item"><a class="connect__list-link" href="#"><img src="../img/p.png" alt="pinterest"></a></li>
+                    <li class="connect__list-item"><a class="connect__list-link" href="#"><img src="../img/i.png" alt="instagram"></a></li>
                 </ul>
             </article>
             <article class="description">
