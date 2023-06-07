@@ -36,15 +36,15 @@
         <section class="banner conteiner">
             <ul class="banner__slide">
                 <li class="banner__slide-text"><p class="banner__list-text">01</p></li>
-                <li class="banner__slide-item"><button type="button" class="banner__button"></button></li>
-                <li class="banner__slide-item"><button type="button" class="banner__button"></button></li>
-                <li class="banner__slide-item"><button type="button" class="banner__button"></button></li>
-                <li class="banner__slide-item"><button type="button" class="banner__button"></button></li>
+                <li class="banner__slide-item"><button class="banner__button banner__button-activ" type="button"></button></li>
+                <li class="banner__slide-item"><button class="banner__button" type="button"></button></li>
+                <li class="banner__slide-item"><button class="banner__button" type="button"></button></li>
+                <li class="banner__slide-item"><button class="banner__button" type="button"></button></li>
             </ul>
             <ul class="banner__list">
                 <li class="banner__list-item"><h1 class="banner__title"> THE OOH NOO COLLECTION</h1></li>
                 <li class="banner__list-item"><p class="banner__subtitle">Designed in Slovenia</p></li>
-                <li class="banner__list-item"><form class="banner__btn" action="#"><button class="banner__btn-item" type="button" name="button" >EXPLORE NOW</button></form></li>
+                <li class="banner__list-item"><form class="banner__btn" action="#"><button class="banner__btn-item banner__btn-item_js" type="button" name="button" >EXPLORE NOW</button></form></li>
             </ul>
             <img class="banner__img" src="../img/banner-backgroun.png" alt="backgroun">
             <div class="banner__text"><h2 class="banner__items-text">FREE (CONTINENTAL) USA SHIPPING ON ALL ORDERS OF $100 USD OR MORE!</h2></div>
@@ -80,11 +80,13 @@
             <img class="delivery__img" src="./img/photo.png" alt="photo">
             <div class="delivery__items">
                 <h2 class="delivery__title">DELIVERY</h2>
-                <ul class="delivery__list">
-                    <li class="delivery__list-item"><button class="delivery__list-button">Delivery</button></li> <!--не выходит добавить размер шрифта через доп класс-->
-                    <li class="delivery__list-item"><button class="delivery__list-button">Guarantee</button></li>
-                    <li class="delivery__list-item"><button class="delivery__list-button">Credit</button></li>
-                </ul>
+                <form  class="delivery__list" action="">
+                    <div class="delivery__list-button">
+                        <button class="delivery__list-btn active-btn">Delivery</button></li> <!--не выходит добавить размер шрифта через доп класс-->
+                        <button class="delivery__list-btn">Guarantee</button></li>
+                        <button class="delivery__list-btn">Credit</button></li>
+                    </div>
+                </form>
                 <p class="delivery__text">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
                 <p class="delivery__text">What started as an outlet to deal  with the traumatic loss of my husband, dlk has now become a truly happy place for me and i have you and all of the beautiful designers that we work with to thank!</p>
                 <button class="delivery__btn" type="button" name="button">LEARN MORE</button>
@@ -147,8 +149,8 @@
                 <h2 class="connect__title">connect title</h2>
                 <p class="connect__title-item">Connect</p>
                 <form class="connect__input" action="#" method="get">
-                    <input class="connect__email" type="email" value="Email">
-                    <button class="connect__btn">JOIN</button>
+                    <input class="connect__email" type="email" value="Email"> <!--не убрал стандартный стиль type=email-->
+                    <button class="connect__btn" type="submit">JOIN</button>
                 </form> 
                 <ul class="connect__list">
                     <li class="connect__list-item"><a class="connect__list-link" href="#"><img src="./img/f.png" alt="facebook"></a></li>
@@ -161,7 +163,7 @@
                 <h2 class="description__title">description title</h2>
                 <ul class="description__list">
                    <li class="developers__list-item">
-                       <form class="developers__text"> 
+                       <form class="developers__items-raring"> 
                            <div class="rating">Company Rating</div>
                                <div class="company-rating">
                                    <div class="company-rating__items">
@@ -180,10 +182,47 @@
                        </form>
                    </li>
                    <li class="developers__list-item"><p class="developers__text">Copyright © 2018 Dlk • Design Life Kids</p></li>
-                   <li class="developers__list-item"><p class="developers__text">Web Design — Direct Line Development</p></li>
+                   <li class="developers__list-item"><p class="developers__text webDesign">Web Design — Direct Line Development</p></li>
                </ul>
             </article>
         </section>
     </footer>
+    <div class="support">
+        <div class="support-modal support-modal_js hiden">
+            <button class="support-modal__btn support-modal__btn_js"></button>
+            <form class="suppotr__form" action="" method="get">
+                <div class="support__list">
+                    <div class="support__name">
+                        <label class="support__label" for="Name">Name</lable>
+                        <input class="support__input" type="text" value="Ivan Ivanov">
+                    </div>
+                    <div class="support__items">
+                        <div class="support__phone">
+                            <label class="support__label" for="Phone">Phone</label>
+                            <input class="support__input" type="tel" id="Phone">
+                        </div>
+                        <div class="support__email">
+                            <label class="support__label" for="Email">Email</label>
+                            <input class="support__input" type="email" id="Email">
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <label class="suppotr__massege" for="">Message</label>
+                            <textarea class="support__area" id="Message" cols="30" rows="10" ></textarea>
+                        </div>
+                    </div>
+                    <div class="support__list">
+                        <input class="support__list-input visually-hidden" type="checkbox" id="consent">
+                        <label class="support__label-item" for="consent">By clicking on the button, you consent to the processing of your personal data</label>
+                    </div>
+                    <div>
+                        <button class="support__btn">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+<script src="/js/support.js"></script>
 </body>
 </html> 

@@ -73,12 +73,19 @@ color: #1E0606;
 .support__input{
     width: 290px;
     height: 50px;
+    padding: 20px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #1E0606;
 }
 .support__input:nth-child(3n+1){
     width: 600px;
     height: 50px;
 }
-.support_area{
+.support__area{
     resize: none;
     width: 600px;
     height: 150px;
@@ -90,17 +97,18 @@ font-weight: 400;
 font-size: 14px;
 line-height: 19px;
 color: #1E0606;
-
 }
-.support__input{
+
+.support__label-item{
     font-family: 'Open Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 25px;
-color: #1E0606;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #1E0606;
+    position: relative;
+    padding-left: 30px;
 }
-
 
 .support__list-item{
     font-family: 'Open Sans';
@@ -163,21 +171,18 @@ line-height: 34px;
 text-transform: uppercase;
 color: #C29974;
 }
-.support__label{
-    position: relative;
-    padding-left: 30px;
-}
-.support__label::after,
-.support__label::before{
+
+.support__label-item::after,
+.support__label-item::before{
     content: "";
     position: absolute;
     left: 0;
     width: 19px;
     height: 19px;
 }
-.support__list-input + .support__label::after {
+.support__list-input + .support__label-item::after {
     background-image: url(../img/mark.svg);
 }
-.support__list-input:checked + .support__label::before {
+.support__list-input:checked + .support__label-item::before {
     background-image: url(../img/markActiv.png);
 }

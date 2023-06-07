@@ -171,6 +171,17 @@ a {
     color: #FFFFFF;
 }
 
+.navigation__list-link:hover,
+.information__list-link:hover,
+.connect__list-link:hover {
+    opacity: 0.5;
+}
+.navigation__list-link:active,
+.information__list-link:active,
+.connect__list-link:active {
+    opacity: 0.2;
+}
+
 .connect__email{
     border: none;
     width: 299px;
@@ -183,6 +194,12 @@ a {
     line-height: 22px;
     color: #EBEBEB;
     background: #666666;
+}
+.connect__email:hover,
+.connect__email:checked,
+.connect__email:active {
+    background: #666666;
+    border: 1px solid #FFFDFD;
 }
 
 .connect__btn {
@@ -198,6 +215,15 @@ a {
     text-align: center;
     color: #FFFFFF;
     background: #000000;
+}
+.connect__btn:hover{
+    background: #C29974;
+}
+.connect__btn:active{
+    background: #CFAF91
+}
+.connect__btn:disabled{
+    background: #C7C1C1;
 }
 
 .connect__input{
@@ -248,16 +274,26 @@ margin-left: -7px;
     margin-left: 47px;
 }
 
-.developers__text {
+.developers__items-raring {
     display: flex;
     gap: 25px;
     
+}
+.webDesign:hover,
+.webDesign:checked,
+.webDesign:active{
+    text-decoration: underline;
+    color: #FFFFFF;
 }
 
 .company-rating {
     position: relative;
     font-size: 18px;
     display: inline-block;
+}
+.developers__items-raring:hover,
+.developers__items-raring:checked {
+    color: #C29974;
 }
 
 .company-rating::before {
@@ -299,13 +335,13 @@ margin-left: -7px;
  }
  .company-rating__item:checked,
  .company-rating__item:checked ~.company-rating__label{
-    color: #ffd300;
+    color: #C29974;
  }
 
 .company-rating__label:hover,
 .company-rating__label:hover~.company-rating__label,
 .company-rating__label:checked~.company-rating__label:hover{
-    color: #ffef9f ;
+    color: #836E5B ;
 }
 .visually-hidden{
     width: 1px;
