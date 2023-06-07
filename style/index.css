@@ -656,3 +656,9 @@ color: #C29974;
     background-color: #97ACE1;
     background-repeat: no-repeat;
 }
+.support-modal__btn:hover{
+ opacity: 0.7;
+}
+.support-modal__btn:active{
+    opacity: 0.4;
+}
