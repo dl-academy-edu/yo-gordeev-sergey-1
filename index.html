@@ -9,8 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@200;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-
-    <title>DLK</title>
+<title>DLK</title>
 </head>
 <body>
     <header class="header conteiner">
@@ -80,11 +79,11 @@
             <img class="delivery__img" src="./img/photo.png" alt="photo">
             <div class="delivery__items">
                 <h2 class="delivery__title">DELIVERY</h2>
-                <form  class="delivery__list" action="">
+                <form  class="delivery__list" action="#">
                     <div class="delivery__list-button">
-                        <button class="delivery__list-btn active-btn">Delivery</button></li> <!--не выходит добавить размер шрифта через доп класс-->
-                        <button class="delivery__list-btn">Guarantee</button></li>
-                        <button class="delivery__list-btn">Credit</button></li>
+                        <button class="delivery__list-btn active-btn">Delivery</button>
+                        <button class="delivery__list-btn">Guarantee</button>
+                        <button class="delivery__list-btn">Credit</button>
                     </div>
                 </form>
                 <p class="delivery__text">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
@@ -106,9 +105,9 @@
             <article class="design__list">
                 <h2 class="design__list-title">DESIGN LIFE KIDS</h2>
                 <ul class="design__list-item">
-                    <p class="design__list-subtitle">About Us</p>
-                    <p class="design__list-text">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.  </p>
-                    <button class="desingn__btn" name="button">BUY NOW</button>
+                    <li class="design__items"><p class="design__list-subtitle">About Us</p></li>
+                    <li class="design__items"><p class="design__list-text">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.  </p></li>
+                    <li class="design__items"><button class="desingn__btn" name="button">BUY NOW</button></li>
                 </ul>
             </article>
             <article class="contact">
@@ -163,7 +162,7 @@
                 <h2 class="description__title">description title</h2>
                 <ul class="description__list">
                    <li class="developers__list-item">
-                       <form class="developers__items-raring"> 
+                       <form class="developers__text"> 
                            <div class="rating">Company Rating</div>
                                <div class="company-rating">
                                    <div class="company-rating__items">
@@ -185,44 +184,44 @@
                    <li class="developers__list-item"><p class="developers__text webDesign">Web Design — Direct Line Development</p></li>
                </ul>
             </article>
-        </section>
+        </section>  
     </footer>
-    <div class="support support_js hiden">
-        <div class="support-modal ">
-            <button class="support-modal__btn support-modal__btn_js"></button>
-            <form class="suppotr__form" action="" method="get">
-                <div class="support__list">
-                    <div class="support__name">
-                        <label class="support__label" for="Name">Name</lable>
-                        <input class="support__input" type="text" value="Ivan Ivanov">
+<div class="support support_js hiden">
+    <div class="support-modal ">
+        <button class="support-modal__btn support-modal__btn_js"></button>
+        <form class="suppotr__form" action="#" method="get">
+            <div class="support__list">
+                <div class="support__name">
+                    <label class="support__label" for="Name">Name</label>
+                    <input class="support__input" type="text" id="Name" value="Ivan Ivanov">
+                </div>
+                <div class="support__items">
+                    <div class="support__phone">
+                        <label class="support__label" for="Phone">Phone</label>
+                        <input class="support__input" type="tel" id="Phone">
                     </div>
-                    <div class="support__items">
-                        <div class="support__phone">
-                            <label class="support__label" for="Phone">Phone</label>
-                            <input class="support__input" type="tel" id="Phone">
-                        </div>
-                        <div class="support__email">
-                            <label class="support__label" for="Email">Email</label>
-                            <input class="support__input" type="email" id="Email">
-                        </div>
-                    </div>
-                    <div>
-                        <div>
-                            <label class="suppotr__massege" for="">Message</label>
-                            <textarea class="support__area" id="Message" cols="30" rows="10" ></textarea>
-                        </div>
-                    </div>
-                    <div class="support__list">
-                        <input class="support__list-input visually-hidden" type="checkbox" id="consent">
-                        <label class="support__label-item" for="consent">By clicking on the button, you consent to the processing of your personal data</label>
-                    </div>
-                    <div>
-                        <button class="support__btn">Submit</button>
+                    <div class="support__email">
+                        <label class="support__label" for="Email">Email</label>
+                        <input class="support__input" type="email" id="Email">
                     </div>
                 </div>
-            </form>
-        </div>
+                <div>
+                    <div>
+                        <label class="suppotr__massege" for="Message">Message</label>
+                        <textarea class="support__area" id="Message" cols="30" rows="10" ></textarea>
+                    </div>
+                </div>
+                <div class="support__list">
+                    <input class="support__list-input visually-hidden" type="checkbox" id="consent">
+                    <label class="support__label-item" for="consent">By clicking on the button, you consent to the processing of your personal data</label>
+                </div>
+                <div>
+                    <button class="support__btn">Submit</button>
+                </div>
+            </div>
+        </form>
     </div>
+</div>
 <script src="/js/support.js"></script>
 </body>
 </html> 
