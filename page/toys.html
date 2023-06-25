@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/common.css">
+    <link rel="stylesheet" href="../style/toys.css">
+    <link rel="stylesheet" href="../js/toys.js">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@200;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>Toys</title>
+</head>
+<body>
+    <header class="header conteiner">
+        <a class="header__logo" href="/">
+            <img class="header__logo-img" src="../img/Union.png" alt="Logotype of DLK" width="100"
+            height="52"></a>
+        <nav class="header__link">
+            <ul class="header__list">
+                <li class="header__list-item"><a class="header__list-link" href="../page/blog.html">BLOG</a></li>
+                <li class="header__list-item"><a class="header__list-link" href="../page/catalog.html">CATALOG</a></li>
+                <li class="header__list-item"><a class="header__list-link" href="#">ABOUT US</a></li>
+            </ul>
+        </nav>
+           <ul class="header__search">
+                <li class="header__search-list">
+                    <button class="searh__btn"  type="button"></button>
+                <li class="search__list">
+                    <a class="search__link" href="../page/contactUs.html">CONTACT US</a> 
+                </li>
+            </ul>
+        </header>
+    <main>    
+        <section class="title conteiner">
+            <h1 class="title__page">Toy for kids</h1>
+            <div class="crumbs">
+                <ul class="breadcrumb">
+                  <li class="crumb"><a class="crumb__link" href="../index.html">Home</a></li>
+                  <li class="crumb"><a class="crumb__link" href="../page/catalog.html">Catalog</a></li>
+                  <li class="crumb active">Toys</li>
+                </ul>
+            </div>               
+        </section>
+        <section class="filter">
+            <div class=" filter__items conteiner">
+                <form class="slider" action="#">
+                    <div class="slider__list">
+                        <label class="slider__label" for="cost">Cost</label>
+                        <input class="styled-slider slider-progress" type="range" id="cost" min="0" max="500">    
+                    </div>
+                    <div class="cost">
+                        <span class="cost__item">0</span>
+                        <span class="cost__item">500</span>
+                    </div>
+                </form>
+                <form class="color__title" action="#">Color
+                    <div class="color">
+                        <div class="color__list">
+                            <input class="color__list-input visually-hidden" type="checkbox" id="black">
+                            <label class="color__label" for="black">Black</label>
+                        </div>
+                        <div class="color__list">
+                            <input class="color__list-input visually-hidden" type="checkbox" id="blue">
+                            <label class="color__label" for="blue">Blue</label>
+                        </div>
+                        <div class="color__list">
+                            <input class="color__list-input visually-hidden" type="checkbox" id="green">
+                            <label class="color__label" for="green">Green</label>
+                        </div>
+                        <div class="color__list">
+                            <input class="color__list-input visually-hidden" type="checkbox" id="white">
+                            <label class="color__label" for="white">White</label>
+                        </div>
+                    </div>
+                </form>
+                <form  class="delivery__title" action="#">Delivery
+                    <div class="filterDelivery">
+                        <input class="filterDelivery__input visually-hidden" name="shipping" type="radio" id="free">
+                        <label class="filterDelivery__label" for="free">Free shipping</label>
+                    </div>
+                    <div class="filterDelivery">
+                        <input class="filterDelivery__input visually-hidden" name="shipping" type="radio" id="fast">
+                        <label class="filterDelivery__label" for="fast">Fast shipping</label>
+                    </div>
+                </form>
+                <form class="amount" action="#">Amount
+                    <div class="amount__list">
+                        <div class="amount__btn">
+                            <input class="amount__input" name="amount" aria-label="0-5" value="0-5" type="radio" id="0-5">
+                            <label class="amount__label" for="0-5">0-5</label>
+                        </div>
+                        <div class="amount__btn">
+                            <input class="amount__input" name="amount" aria-label="10-20" value="10-20" type="radio" id="10-20">
+                            <label class="amount__label" for="10-20">10-20</label>
+                        </div>
+                        <div class="amount__btn">
+                            <input class="amount__input" name="amount" aria-label="20-50" value="20-50" type="radio" id="20-50">
+                            <label class="amount__label" for="20-50">20-50</label>
+                        </div>                        
+                    </div>
+                </form>
+                <form class="filterBtn" action="#">
+                    <div class="filterBtn__list">
+                        <div class="filterBtn__item"><button class="filterBtn__item-btn">Apply</button></div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="catalog conteiner"> 
+            <ul class="catalog__list">
+                <li class="catalog__list-item"><a class="catalog__list-link" href="#">learn more</a><img class="catalog__list-img" src="../img/prod1.png" alt="bag">SHARKY BEAN BAG CHAIR COVER<p class="catalog__list-text">$60.00 USD</p></li>
+                <li class="catalog__list-item"><a class="catalog__list-link" href="#">learn more</a><img class="catalog__list-img" src="../img/prod2.png" alt="frames">BRASS DECO FRAMES<p class="catalog__list-text">$66.00 USD</p></li>
+                <li class="catalog__list-item"><a class="catalog__list-link" href="#">learn more</a><img class="catalog__list-img" src="../img/prod3.png" alt="apron">CIBO FULL APRON<p class="catalog__list-text">$60.00 USD</p></li>
+                <li class="catalog__list-item"><a class="catalog__list-link" href="#">learn more</a><img class="catalog__list-img" src="../img/prod4.png" alt="gumball">GATCHA GATCHA GUMBALL MACHINE<p class="catalog__list-text">$56.00 USD</p></li>
+                <li class="catalog__list-item"><a class="catalog__list-link" href="#">learn more</a><img class="catalog__list-img" src="../img/prod5.png" alt="candle">CHRISTMAS ADVENT SCENTED CANDLE<p class="catalog__list-text">$29.00 USD</p></li>
+                <li class="catalog__list-item"><a class="catalog__list-link" href="#">learn more</a><img class="catalog__list-img" src="../img/prod6.png" alt="light">TANGLE SPINNING TEA LIGHT<p class="catalog__list-text">$56.00 USD</p></li>
+            </ul>
+        </section>
+        <section class="page conteiner">
+            <div class="pages">
+                <input class="pages__previous" type="button" value="" aria-label="prev">
+                <ul class="pages__list">  
+                    <li class="pages__item"><a class="pages__list-link" href="#">1</a></li>
+                    <li class="pages__item"><a class="pages__list-link" href="#">2</a></li>
+                    <li class="pages__item"><a class="pages__list-link" href="#">3</a></li>
+                    <li class="pages__item"><a class="pages__list-link" href="#">4</a></li>
+                </ul>
+                <input class="pages__up" type="button" value="" aria-label="next">
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <section class="footer__item">
+            <article class="navigation">
+                <h2 class="navigation__title">navigation title</h2>
+                <ul class="navigation__list">
+                <li class="navigation__list-item"><p class="navigation__title-item">Navigation</p></li>
+                <li class="navigation__list-item"><a class="navigation__list-link" href="#">About Us</a></li>
+                <li class="navigation__list-item"><a class="navigation__list-link" href="#">Blog</a></li>
+                <li class="navigation__list-item"><a class="navigation__list-link" href="#">Design Services</a></li>
+                <li class="navigation__list-item"><a class="navigation__list-link" href="#">Featured On</a></li>
+                <li class="navigation__list-item"><a class="navigation__list-link" href="#">2018 Holiday Catalog</a></li>
+                <li class="navigation__list-item"><a class="navigation__list-link" href="#">Shop By Designer</a></li>
+            </ul>
+            </article>
+            <article class="information">
+                <h2 class="information__title">information title</h2>
+                <ul class="information__list">
+                    <li class="information__list-item"><p class="information__title-item">Customer Information</p></li> 
+                    <li class="information__list-item"><a class="information__list-link" href="#">Contact Us</a></li>
+                    <li class="information__list-item"><a class="information__list-link" href="#">Sale Exclusions</a></li>
+                    <li class="information__list-item"><a class="information__list-link" href="#">Shipping & Returns</a></li>
+                    <li class="information__list-item"><a class="information__list-link" href="#">Terms & Conditions</a></li>
+                    <li class="information__list-item"><a class="information__list-link" href="#">Privacy Policy</a></li>
+                    <li class="information__list-item"><a class="information__list-link" href="#">Search</a></li>
+                </ul>
+            </article>
+            <article class="connect">
+                <h2 class="connect__title">connect title</h2>
+                <p class="connect__title-item">Connect</p>
+                <form class="connect__input" action="#" method="get">
+                    <input class="connect__email" type="email" value="Email">
+                    <button class="connect__btn">JOIN</button>
+                </form> 
+                <ul class="connect__list">
+                    <li class="connect__list-item"><a class="connect__list-link" href="#"><img src="../img/f.png" alt="facebook"></a></li>
+                    <li class="connect__list-item"><a class="connect__list-link" href="#"><img src="../img/t.png" alt="twetter"></a></li>
+                    <li class="connect__list-item"><a class="connect__list-link" href="#"><img src="../img/p.png" alt="pinterest"></a></li>
+                    <li class="connect__list-item"><a class="connect__list-link" href="#"><img src="../img/i.png" alt="instagram"></a></li>
+                </ul>
+            </article>
+            <article class="description">
+                <h2 class="description__title">description title</h2>
+                <ul class="description__list">
+                   <li class="developers__list-item">
+                       <form class="developers__text"> 
+                           <div class="rating">Company Rating</div>
+                               <div class="company-rating">
+                                   <div class="company-rating__items">
+                                       <input class="company-rating__item" type="radio" id="company-rating__5" name="company-rating" aria-label="5" value="5">
+                                       <label class="company-rating__label" for="company-rating__5"></label>
+                                       <input class="company-rating__item" type="radio" id="company-rating__4" name="company-rating" aria-label="4" value="4">
+                                       <label class="company-rating__label" for="company-rating__4"></label>
+                                       <input class="company-rating__item" type="radio" id="company-rating__3" name="company-rating" aria-label="3" value="3">
+                                       <label class="company-rating__label" for="company-rating__3"></label>
+                                       <input class="company-rating__item" type="radio" id="company-rating__2" name="company-rating" aria-label="2" value="2">
+                                       <label class="company-rating__label" for="company-rating__2"></label>
+                                       <input class="company-rating__item" type="radio" id="company-rating__1" name="company-rating" aria-label="1" value="1">
+                                       <label class="company-rating__label" for="company-rating__1"></label>
+                                   </div>
+                               </div>    
+                       </form>
+                   </li>
+                   <li class="developers__list-item"><p class="developers__text">Copyright © 2018 Dlk • Design Life Kids</p></li>
+                   <li class="developers__list-item"><p class="developers__text webDesign">Web Design — Direct Line Development</p></li>
+               </ul>
+            </article>
+        </section>
+    </footer>
+    <script src="../js/toys.js"></script>
+</body>
+</html>
