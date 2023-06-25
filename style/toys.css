@@ -379,7 +379,7 @@ input[type=range].styled-slider.slider-progress::-ms-fill-lower {
   height: 207px;
   left: 99px;
   top: 148px;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat' Arial, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
